@@ -22,6 +22,27 @@ void Arbre::AjouterNoeud(int cle){
     AjouterNoeudPrivee(cle, root);
 }
 
+void Arbre::AfficherArbre(){
+    AfficherArbrePrivee(root);
+}
+
+void Arbre::AfficherArbrePrivee(Noeud* Ptr){
+    if (root !=NULL){
+            if(Ptr->gauche !=NULL){
+                AfficherArbrePrivee(Ptr->gauche);
+            }
+            cout << Ptr->cle << "*";
+            if (Ptr->droite !=NULL){
+                AfficherArbrePrivee(Ptr->droite);
+            }
+    }
+    else{
+
+        cout << "Arbre vide !!! \n" ;
+    }
+}
+
+
 void Arbre::AjouterNoeudPrivee(int cle, Noeud* Ptr){
 
         if(root== NULL){

@@ -19,11 +19,13 @@ class Arbre{
     Noeud* root;
 
     void AjouterNoeudPrivee(int cle, Noeud* Ptr);
+    void AfficherArbrePrivee(Noeud* Ptr);
 
     public:
         Arbre();
         Noeud* CreerFeuille(int cle);
         void AjouterNoeud(int cle);
+        void AfficherArbre();
         //~Arbre();
 
 };
