@@ -1,23 +1,29 @@
-#ifndef ARBREB_H_INCLUDED
-#define ARBREB_H_INCLUDED
-
 #include <iostream>
 #include <cstdlib>
 #include "ArbreB.cpp"
 
-class Arbre{
+using namespace std;
 
-    struct noeud{
-        int cle;
-        node* gauche;
-        node* doite;
-    };
-    node* root;
+#ifndef ARBREB_H_INCLUDED
+#define ARBREB_H_INCLUDED
+
+class Arbre{
 
     private:
 
+    struct Noeud{
+        int cle;
+        Noeud* gauche;
+        Noeud* droite;
+    };
+    Noeud* root;
+
+    void AjouterNoeudPrivee(int cle, Noeud* Ptr);
+
     public:
-        //Arbre();
+        Arbre();
+        Noeud* CreerFeuille(int cle);
+        void AjouterNoeud(int cle);
         //~Arbre();
 
 };
