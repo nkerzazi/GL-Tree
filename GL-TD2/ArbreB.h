@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstdlib>
-#include "ArbreB.cpp"
 
 using namespace std;
 
@@ -20,13 +19,18 @@ class Arbre{
 
     void AjouterNoeudPrivee(int cle, Noeud* Ptr);
     void AfficherArbrePrivee(Noeud* Ptr);
+    Noeud* GetNoeudPrivee(int cle, Noeud* Ptr);
+    int   TrouverPlusPetiteClePrivee(Noeud* Ptr);
 
     public:
         Arbre();
         Noeud* CreerFeuille(int cle);
         void AjouterNoeud(int cle);
         void AfficherArbre();
-        //~Arbre();
+        Noeud* GetNoeud(int cle);
+        int   GetCleRoot();
+        void  AfficherEnfants(int cle);
+        int   TrouverPlusPetiteCle();
 
 };
 

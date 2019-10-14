@@ -1,19 +1,10 @@
 # depslib dependency file v1.0
-1571066341 source:c:\td2\gl-tree\gl-td2\main.cpp
-	<iostream>
-
-1571068780 source:c:\td2\gl-tree\gl-td2\arbreb.cpp
+1571094504 source:c:\td2\gl-tree\gl-td2\main.cpp
 	<iostream>
 	<cstdlib>
 	"ArbreB.h"
 
-1571068757 c:\td2\gl-tree\gl-td2\arbreb.h
+1571094401 c:\td2\gl-tree\gl-td2\arbreb.h
 	<iostream>
 	<cstdlib>
-	"ArbreB.cpp"
-
-1571068780 c:\td2\gl-tree\gl-td2\arbreb.cpp
-	<iostream>
-	<cstdlib>
-	"ArbreB.h"
 
